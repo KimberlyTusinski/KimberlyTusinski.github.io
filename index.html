@@ -22,14 +22,15 @@
   <link href="./assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
 </head>
 
-<body class="profile-page">  
+<body class="profile-page">
   <div class="wrapper">
     <section class="section-profile-cover section-shaped my-0">
-      <!-- Circles background -->
-      <img class="bg-image" src="./assets/img/theme/background-1.jpg" style="width: 100%;">
+      <!-- Tree background -->
+      <img class="bg-image" src="./assets/img/theme/background-6.png" style="width: 100%;">
       <!-- SVG separator -->
       <div class="separator separator-bottom separator-skew">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg">
           <polygon class="fill-secondary" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
@@ -49,16 +50,18 @@
               <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
                 <div class="card-profile-actions py-4 mt-lg-0">
                   <a href="https://github.com/KimberlyTusinski" class="btn btn-sm btn-info mr-4">Github</a>
-                  <a href="https://www.instagram.com/kimberly.tusinski/" class="btn btn-sm btn-default float-right">Instagram</a>
+                  <a href="https://www.instagram.com/kimberly.tusinski/"
+                    class="btn btn-sm btn-default float-right">Instagram</a>
                 </div>
               </div>
-              <div class="col-lg-4 order-lg-1">                
+              <div class="col-lg-4 order-lg-1">
               </div>
             </div>
             <div class="text-center mt-5">
               <h3>Kimberly Tusinski<span class="font-weight-light">, 26</span></h3>
               <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Rio Grande, RS</div>
-              <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Analista e Desenvolvedora de Sistemas - Eagle Digital</div>
+              <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Analista e Desenvolvedora de Sistemas -
+                Eagle Digital</div>
               <div><i class="ni education_hat mr-2"></i>IFRS - Campus Rio Grande</div>
             </div>
             <div class="mt-5 py-5 border-top text-center">
@@ -73,77 +76,1265 @@
         </div>
       </div>
     </section>
-
-     <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
+          <div class="modal-header">
+            Resposta ao stress
+          </div>
           <div class="modal-body p-0">
-            <div class="card bg-secondary shadow border-0 mb-0">              
-              <div class="card-body px-lg-5 py-lg-5 bg-white">                
-                <form role="form">
-                  <div class="custom-control custom-control-alternative custom-checkbox">
-                    <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                    <label class="custom-control-label" for=" customCheckLogin">
-                      <span>Check 1</span>
-                    </label>
+            <div class="card bg-secondary shadow border-0 mb-0">
+              <div class="card-body px-lg-5 py-lg-5 bg-white">
+                <form role="form" id="stressResponseForm">
+                  <!-- degreeOfProximity -->
+                  <div class="row justify-content-center">
+                    <div class="col text-left font-size-form">
+                      Grau de proximidade comigo:
+                    </div>
                   </div>
-
-                  <div class="form-group">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:alert(5);">5</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">4</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">4</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:;">5</a>
-                      </li>
-                    </ul>
-    
-                    <div class="row">
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="custom-radio-test" class="custom-control-input" id="customRadioX5" type="radio">
-                        <label class="custom-control-label" for="customRadioX5">
-                          <span>5</span>
+                  <div class="row justify-content-center py-2 mt-4">
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="custom-control custom-control-alternative custom-checkbox">
+                        <input class="custom-control-input" name="degreeOfProximity" value="family" id="family"
+                          type="radio">
+                        <label class="custom-control-label" for="family">
+                          <span>Família</span>
                         </label>
                       </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="custom-radio-test" class="custom-control-input" id="customRadioX4" type="radio">
-                        <label class="custom-control-label" for="customRadioX4">
-                          <span>4</span>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 text-md-center">
+                      <div class="custom-control custom-control-alternative custom-checkbox">
+                        <input class="custom-control-input" name="degreeOfProximity" value="higher" id="higher"
+                          type="radio">
+                        <label class="custom-control-label" for="higher">
+                          <span>Superior(a)</span>
                         </label>
                       </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="custom-radio-test" class="custom-control-input" id="customRadioX3" type="radio">
-                        <label class="custom-control-label" for="customRadioX3">
-                          <span>3</span>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 text-md-right">
+                      <div class="custom-control custom-control-alternative custom-checkbox">
+                        <input class="custom-control-input" name="degreeOfProximity" value="subordinate"
+                          id="subordinate" type="radio">
+                        <label class="custom-control-label" for="subordinate">
+                          <span>Subordinado(a)</span>
                         </label>
                       </div>
-                    </div>               
-                  </div>                 
-
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- flexibility -->
+                  <div class="row justify-content-center py-2 mt-4">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Rígido
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Flexível
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center flexibility">
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('flexibility', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- accessibility -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Inacessível
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Acessível
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center accessibility">
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('accessibility', this);"
+                            value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- energy -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Pouca energia
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Energética
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center energy">
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('energy', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- stability -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Desaba facilmente
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Firme
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center stability">
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('stability', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- challenge -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Medrosa
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Desafia-se
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center challenge">
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('challenge', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- mood -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Humor instável
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Humor equilibrado
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center mood">
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('mood', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- competitiveness -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Pouco competitiva
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Competitiva
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center competitiveness">
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('competitiveness', this);"
+                            value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- sufficiency -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Dependente
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Auto-suficiente
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center sufficiency">
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('sufficiency', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- involvement -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Não se compromete
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Envolvida
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center involvement">
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('involvement', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- friendly -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Pouco amigável
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Amigável
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center friendly">
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('friendly', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- assertiveness -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Passiva
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Assertiva
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center assertiveness">
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('assertiveness', this);"
+                            value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- confidence -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Insegura
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Confiante
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center confidence">
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('confidence', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- patience -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Impaciente
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Paciente
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center patience">
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('patience', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- discipline -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Indisciplinada
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Disciplinada
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center discipline">
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('discipline', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- optimism -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Pessimista
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Otimista
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center optimism">
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('optimism', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- changes -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Fechada a mudanças
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Aberta a mudanças
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center changes">
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('changes', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- motivation -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Desmotivada
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Motivada
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center motivation">
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('motivation', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- problemSolver -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Não consegue<br/>
+                      resolver problemas
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Boa solucionadora<br/>
+                      de problemas
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center problemSolver">
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('problemSolver', this);"
+                            value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- teamWork -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Não sabe<br/>
+                      trabalhar em equipe
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Trabalha em equipe
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center teamWork">
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('teamWork', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- takeRisks -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Não gosta de<br/>
+                      se arriscar
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Gosta de<br/>
+                      se arriscar
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center takeRisks">
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('takeRisks', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- physicalForm -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Fora da<br/>
+                      forma física
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Está em boa<br/>
+                      forma física
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center physicalForm">
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('physicalForm', this);"
+                            value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- bodyLanguage -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Linguagem corporal<br/>
+                      fechada
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Linguagem corporal<br/>
+                      aberta
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center bodyLanguage">
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('bodyLanguage', this);"
+                            value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- workPosture -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Não sabe ser<br/>
+                      leve no trabalho
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Sabe ser<br/>
+                      leve no trabalho
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center workPosture">
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('workPosture', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- receptivity -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Defensiva
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Receptiva
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center receptivity">
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('receptivity', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- proactivity -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Paralisa em<br/>
+                      situações de pressão
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Pró-ativa
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center proactivity">
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);"
+                            value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);"
+                            value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);"
+                            value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);"
+                            value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('proactivity', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- senseHumor -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 order-lg-1 order-md-1 order-sm-1 font-size-form">
+                      Pouco senso<br/>
+                      de humor
+                    </div>
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2 order-sm-1-right text-right font-size-form">
+                      Bom senso<br/>
+                      de humor
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-3 order-sm-3">
+                      <div class="form-group">
+                        <ul class="pagination justify-content-center senseHumor">
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="-5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="-4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="-3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="-2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="1">
+                            <a class="page-link" href="javascript:;">1</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="2">
+                            <a class="page-link" href="javascript:;">2</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="3">
+                            <a class="page-link" href="javascript:;">3</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="4">
+                            <a class="page-link" href="javascript:;">4</a>
+                          </li>
+                          <li class="page-item" onclick="javascript:changeSelectOption('senseHumor', this);" value="5">
+                            <a class="page-link" href="javascript:;">5</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary my-4" onclick="javascript:alert(this);">Enviar</button>
+                    <button type="button" class="btn btn-primary my-4" onclick="javascript:submitForm();">Enviar</button>
                   </div>
                 </form>
               </div>
@@ -152,6 +1343,189 @@
         </div>
       </div>
     </div>
+    <!--scripts to form-->
+    <script>
+      function submitForm() {
+        const data = {
+          degreeOfProximity: $('input[name=degreeOfProximity]:checked').val(),
+          flexibility: $('.flexibility>li.active').val(),
+          accessibility: $('.accessibility>li.active').val(),
+          energy: $('.energy>li.active').val(),
+          stability: $('.stability>li.active').val(),
+          challenge: $('.challenge>li.active').val(),
+          mood: $('.mood>li.active').val(),
+          competitiveness: $('.competitiveness>li.active').val(),
+          sufficiency: $('.sufficiency>li.active').val(),
+          involvement: $('.involvement>li.active').val(),
+          friendly: $('.friendly>li.active').val(),
+          assertiveness: $('.assertiveness>li.active').val(),
+          confidence: $('.confidence>li.active').val(),
+          patience: $('.patience>li.active').val(),
+          discipline: $('.discipline>li.active').val(),
+          optimism: $('.optimism>li.active').val(),
+          changes: $('.changes>li.active').val(),
+          motivation: $('.motivation>li.active').val(),
+          problemSolver: $('.problemSolver>li.active').val(),
+          teamWork: $('.teamWork>li.active').val(),
+          takeRisks: $('.takeRisks >li.active').val(),
+          physicalForm: $('.physicalForm>li.active').val(),
+          bodyLanguage: $('.bodyLanguage>li.active').val(),
+          workPosture: $('.workPosture>li.active').val(),
+          receptivity: $('.receptivity>li.active').val(),
+          proactivity: $('.proactivity>li.active').val(),
+          senseHumor: $('.senseHumor>li.active').val(),
+        };
+
+        if(validate(data)) {
+          console.log(data);
+          // createFormResponse(data);
+        }
+      }
+      
+      function changeSelectOption(query, list) {
+        $('.' + query + '>li').removeClass('active');
+        $(list).addClass('active');
+      }
+
+      function validate(data) {
+        if (data.degreeOfProximity === undefined) {
+          alert('Opa, esqueceu de dizer qual é o seu grau de proximidade comigo! 😁');
+          $('input[name=degreeOfProximity]').focus();
+          
+          return false;
+        } else if (data.flexibility === undefined) {
+          alert('Esqueceu de preencher sobre a minha flexibilidade! 😀');
+          $('.flexibility>li.active').focus();
+          
+          return false;
+        } else if (data.accessibility === undefined) {
+          alert('Esqueceu de dizer que sou acessível! 😗');
+          $('.accessibility>li.active').focus();
+          
+          return false;
+        } else if (data.energy === undefined) {
+          alert('Esqueceu de preencher sobre a minha energia! 💪');
+          $('.energy>li.active').focus();
+          
+          return false;
+        } else if (data.stability === undefined) {
+          alert('Esqueceu de preencher sobre a minha firmeza! 😲');
+          $('.stability>li.active').focus();
+          
+          return false;
+        } else if (data.challenge === undefined) {
+          alert('Esqueceu de preencher se sou medrosa ou não! 🤐');
+          $('.challenge>li.active').focus();
+          
+          return false;
+        } else if (data.mood === undefined) {
+          alert('Esqueceu de preencher sobre o meu humor equilibrado! (❁´◡`❁)');
+          $('.mood>li.active').focus();
+          
+          return false;
+        } else if (data.competitiveness === undefined) {
+          alert('Esqueceu de preencher se me acha competitiva! 😶');
+          $('.competitiveness>li.active').focus();
+          
+          return false;
+        } else if (data.sufficiency === undefined) {
+          alert('Esqueceu de preencher sobre a minha auto-suficiência! 😎');
+          $('.sufficiency>li.active').focus();
+          
+          return false;
+        } else if (data.involvement === undefined) {
+          alert('Esqueceu de preencher se sou envolvida! 😢');
+          $('.involvement>li.active').focus();
+          
+          return false;
+        } else if (data.friendly === undefined) {
+          alert('Esqueceu de marcar que sou amigável! 🤣');
+          $('.friendly>li.active').focus();
+          
+          return false;
+        } else if (data.assertiveness === undefined) {
+          alert('Esqueceu de preencher se sou assertiva! ¯\_(ツ)_/¯');
+          $('.assertiveness>li.active').focus();
+          
+          return false;
+        } else if (data.confidence === undefined) {
+          alert('Esqueceu de preencher sobre a minha confiança! 😏');
+          $('.confidence>li.active').focus();
+          
+          return false;
+        } else if (data.patience === undefined) {
+          alert('Esqueceu de preencher sobre a minha paciência! 😌');
+          $('.patience>li.active').focus();
+          
+          return false;
+        } else if (data.discipline === undefined) {
+          alert('Esqueceu de marcar que sou disciplinada! ಥ_ಥ');
+          $('.discipline>li.active').focus();
+          
+          return false;
+        } else if (data.optimism === undefined) {
+          alert('Esqueceu de preencher sobre o meu otimismo! 😃');
+          $('.optimism>li.active').focus();
+          
+          return false;
+        } else if (data.changes === undefined) {
+          alert('Esqueceu de marcar que sou aberta a mudanças! ಠ_ಠ');
+          $('.changes>li.active').focus();
+          
+          return false;
+        } else if (data.motivation === undefined) {
+          alert('Esqueceu de preencher que sou motivada! 🤗');
+          $('.motivation>li.active').focus();
+          
+          return false;
+        } else if (data.problemSolver === undefined) {
+          alert('Esqueceu de preencher que sou ótima resolvendo problemas! 😋');
+          $('.problemSolver>li.active').focus();
+          
+          return false;
+        } else if (data.teamWork === undefined) {
+          alert('Esqueceu de preencher sobre o meu trabalho em equipe! ✌');
+          $('.teamWork>li.active').focus();
+          
+          return false;
+        } else if (data.takeRisks === undefined) {
+          alert('Esqueceu de preencher se gosto ou não de me arriscar! 🚀');
+          $('.takeRisks>li.active').focus();
+          
+          return false;
+        } else if (data.physicalForm === undefined) {
+          alert('Esqueceu de preencher sobre a minha boa forma física! 😂');
+          $('.physicalForm>li.active').focus();
+          
+          return false;
+        } else if (data.bodyLanguage === undefined) {
+          alert('Esqueceu de preencher sobre a minha linguagem corporal! 🤔');
+          $('.bodyLanguage>li.active').focus();
+          
+          return false;
+        } else if (data.workPosture === undefined) {
+          alert('Calma que tá acabando! Faltou sobre a minha postura no trabalho! 🥺');
+          $('.workPosture>li.active').focus();
+          
+          return false;
+        } else if (data.receptivity === undefined) {
+          alert('Quase lá! Faltou dizer se sou receptiva ou defensiva! 🤨');
+          $('.receptivity>li.active').focus();
+          
+          return false;
+        } else if (data.proactivity === undefined) {
+          alert('Falta pouco! Só marcar que sou pró-ativa ali! 😛');
+          $('.proactivity>li.active').focus();
+          
+          return false;
+        } else if (data.senseHumor === undefined) {
+          alert('Não desiste de mim! Faltou o último! 😫');
+          $('.senseHumor>li.active').focus();
+        }
+
+        return true;
+      }
+    </script>
     <footer class="footer">
       <div class="container">
         <div class="row row-grid align-items-center mb-5">

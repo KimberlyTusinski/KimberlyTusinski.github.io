@@ -889,19 +889,6 @@ pre code {
   margin-left: 91.666667%;
 }
 
-.font-size-form {
-  font-size: 14px;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .order-sm-1-right {
-    margin-left: -100%;
-  }
-  .font-size-form {
-    font-size: 14px;
-  }
-}
-
 @media (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
@@ -4300,8 +4287,8 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-  border-color: grey;
-  background-color: grey;
+  border-color: #E1306C;
+  background-color: #E1306C;
   box-shadow: none;
 }
 
