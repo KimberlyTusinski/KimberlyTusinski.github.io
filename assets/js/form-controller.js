@@ -37,22 +37,26 @@ function submitForm() {
 
 function createFormResponse(data) {
   fetch('https://api-stress-response-form.herokuapp.com/answers', {
+    mode: 'cors',
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
+      'Access-Control-Allow-Origin':'*',
       'Content-type': 'application/json; charset=UTF-8'
     }
   }).then(function (response) {
 	  if (response.ok) {
-      $('.modal').hide();
+      $('.modal').modal('hide');
 		  alert('Obrigada por ter empenhado o seu tempo para me ajudar fazendo essa avaliação! 🥰');
 	  }
 	  return Promise.reject(response);
   }).then(function (data) {
   	console.log(data);
   }).catch(function (error) {
-    alert('Deu alguma coisa errada com a conexão no servidor! Pode tentar mais uma vez ou me mandar uma mensagem avisando que o heroku quebrou... 😭');
-	  console.warn('Something went wrong.', error);
+    if(error.status != 201) {
+      alert('Deu alguma coisa errada com a conexão no servidor! Pode tentar mais uma vez ou me mandar uma mensagem avisando que o heroku quebrou... 😭');
+    }
+    console.warn('Something went wrong.', error);
   });
 }
 
