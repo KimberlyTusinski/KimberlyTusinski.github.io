@@ -31,9 +31,29 @@ function submitForm() {
   };
 
   if(validate(data)) {
-    console.log(data);
-    // createFormResponse(data);
+    createFormResponse(data);
   }
+}
+
+function createFormResponse(data) {
+  fetch('https://api-stress-response-form.herokuapp.com/answers', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8'
+    }
+  }).then(function (response) {
+	  if (response.ok) {
+      $('.modal').hide();
+		  alert('Obrigada por ter empenhado o seu tempo para me ajudar fazendo essa avaliação! 🥰');
+	  }
+	  return Promise.reject(response);
+  }).then(function (data) {
+  	console.log(data);
+  }).catch(function (error) {
+    alert('Deu alguma coisa errada com a conexão no servidor! Pode tentar mais uma vez ou me mandar uma mensagem avisando que o heroku quebrou... 😭');
+	  console.warn('Something went wrong.', error);
+  });
 }
 
 function changeSelectOption(query, list) {
